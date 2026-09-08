@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nexus · refined commerce</title>
+  <title>Nexus · blue horizon</title>
 
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -17,22 +17,22 @@
     }
 
     :root {
-      --bg: #f6f4f0;
+      --bg: #f0f4fa;
       --card: #ffffff;
-      --primary: #1b1b26;
-      --primary-light: #2c2c3e;
-      --accent: #c16a5a;
-      --accent-light: #edd8d2;
-      --accent-dark: #a35242;
-      --muted: #6e6e7c;
-      --muted-light: #a8a8b8;
-      --surface: #edebe7;
+      --primary: #0b1a33;
+      --primary-light: #1a2d4a;
+      --accent: #2a6f97;
+      --accent-light: #c9ddec;
+      --accent-dark: #1d4f6e;
+      --muted: #4a5d72;
+      --muted-light: #8a9bae;
+      --surface: #e5ecf3;
       --success: #2a9d8f;
       --warning: #e9c46a;
       --radius: 24px;
       --radius-sm: 12px;
-      --shadow: 0 8px 30px rgba(0,0,0,0.03);
-      --shadow-hover: 0 20px 50px rgba(0,0,0,0.06);
+      --shadow: 0 8px 30px rgba(10, 30, 60, 0.06);
+      --shadow-hover: 0 20px 50px rgba(10, 30, 60, 0.10);
       --transition: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
       --container: 1280px;
     }
@@ -56,15 +56,15 @@
       padding: 0 32px;
     }
 
-    /* ---- header : clean & airy ---- */
+    /* ---- header : blue-tinted glass ---- */
     header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255, 255, 255, 0.78);
+      background: rgba(240, 244, 250, 0.78);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(0,0,0,0.02);
+      border-bottom: 1px solid rgba(10, 30, 60, 0.04);
     }
     .header-inner {
       display: flex;
@@ -111,7 +111,7 @@
     }
     nav.main-nav ul li a:hover,
     nav.main-nav ul li a.active {
-      background: var(--surface);
+      background: var(--accent-light);
       color: var(--primary);
     }
 
@@ -131,7 +131,7 @@
       transition: var(--transition);
     }
     .header-actions .icon-btn:hover {
-      background: var(--surface);
+      background: var(--accent-light);
       color: var(--primary);
     }
 
@@ -149,7 +149,7 @@
       border-radius: 50%;
       display: grid;
       place-items: center;
-      border: 2px solid #fff;
+      border: 2px solid #f0f4fa;
     }
 
     .search-wrap {
@@ -165,7 +165,7 @@
     .search-wrap:focus-within {
       border-color: var(--accent);
       background: #fff;
-      box-shadow: 0 0 0 6px rgba(193, 106, 90, 0.06);
+      box-shadow: 0 0 0 6px rgba(42, 111, 151, 0.08);
     }
     .search-wrap input {
       border: 0;
@@ -196,7 +196,7 @@
     #mobileMenu {
       display: none;
       background: #fff;
-      border-top: 1px solid rgba(0,0,0,0.02);
+      border-top: 1px solid rgba(10,30,60,0.04);
       padding: 12px 0 20px;
     }
     #mobileMenu ul {
@@ -214,10 +214,10 @@
       font-weight: 500;
       color: var(--primary);
     }
-    #mobileMenu ul li a:hover { background: var(--surface); }
+    #mobileMenu ul li a:hover { background: var(--accent-light); }
     #mobileMenu ul li a i { width: 24px; color: var(--muted); }
 
-    /* ---- buttons : refined ---- */
+    /* ---- buttons : blue accent ---- */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -239,7 +239,7 @@
       background: var(--accent-dark);
       border-color: var(--accent-dark);
       transform: translateY(-3px);
-      box-shadow: 0 16px 32px rgba(193, 106, 90, 0.20);
+      box-shadow: 0 16px 32px rgba(42, 111, 151, 0.25);
     }
     .btn-secondary {
       background: var(--primary);
@@ -249,12 +249,12 @@
     .btn-secondary:hover {
       background: var(--primary-light);
       transform: translateY(-3px);
-      box-shadow: 0 16px 32px rgba(27, 27, 38, 0.12);
+      box-shadow: 0 16px 32px rgba(11, 26, 51, 0.15);
     }
     .btn-outline {
       background: transparent;
       color: var(--primary);
-      border-color: rgba(27,27,38,0.12);
+      border-color: rgba(11,26,51,0.12);
     }
     .btn-outline:hover {
       background: var(--primary);
@@ -271,7 +271,7 @@
     }
     .btn-sm { padding: 10px 24px; font-size: 13px; }
 
-    /* ---- hero : calm & editorial ---- */
+    /* ---- hero : deep blue gradient ---- */
     .hero {
       position: relative;
       display: flex;
@@ -281,21 +281,21 @@
       border-radius: var(--radius);
       overflow: hidden;
       margin: 20px 32px 0;
-      background: linear-gradient(160deg, #1b1b26 0%, #2f2f44 100%);
+      background: linear-gradient(160deg, #0b1a33 0%, #1a3a5c 100%);
     }
     .hero::before {
       content: '';
       position: absolute;
       inset: 0;
       background: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-      opacity: 0.28;
+      opacity: 0.20;
       z-index: 0;
     }
     .hero .container { position: relative; z-index: 1; }
     .hero .badge {
       display: inline-block;
-      background: rgba(193,106,90,0.18);
-      color: var(--accent);
+      background: rgba(42,111,151,0.20);
+      color: #b6d6ea;
       padding: 6px 22px;
       border-radius: 60px;
       font-weight: 600;
@@ -314,7 +314,7 @@
       margin-bottom: 14px;
     }
     .hero p {
-      color: rgba(255,255,255,0.75);
+      color: rgba(255,255,255,0.78);
       font-size: 18px;
       max-width: 460px;
       margin-bottom: 30px;
@@ -337,6 +337,7 @@
       font-size: 28px;
       font-weight: 700;
       letter-spacing: -0.3px;
+      color: var(--primary);
     }
     .section-header .title-group p {
       color: var(--muted);
@@ -359,7 +360,7 @@
       border-bottom-color: var(--accent);
     }
 
-    /* categories : soft tiles */
+    /* categories : blue-tinted tiles */
     .categories-grid {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -398,7 +399,7 @@
     .cat-card h4 { font-size: 15px; font-weight: 600; }
     .cat-card .count { font-size: 13px; color: var(--muted); margin-top: 4px; }
 
-    /* products : minimal & spacious */
+    /* products : clean with blue accents */
     .products-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -499,6 +500,7 @@
     .product-card .body .price {
       font-weight: 700;
       font-size: 18px;
+      color: var(--primary);
     }
     .product-card .body .old-price {
       color: var(--muted-light);
@@ -538,7 +540,7 @@
     }
     .product-card .footer .add-btn.added { background: var(--success); }
 
-    /* deal : dual-tone */
+    /* deal : blue-infused */
     .deal-wrap {
       display: flex;
       gap: 0;
@@ -582,6 +584,7 @@
       font-size: 34px;
       font-weight: 400;
       margin-bottom: 6px;
+      color: var(--primary);
     }
     .deal-wrap .deal-content .desc {
       color: var(--muted);
@@ -590,6 +593,7 @@
     .deal-wrap .deal-content .price-big {
       font-size: 36px;
       font-weight: 800;
+      color: var(--accent);
     }
     .deal-wrap .deal-content .price-big .old {
       font-size: 20px;
@@ -681,7 +685,7 @@
     .testimonial-card .author .name { font-weight: 600; font-size: 14px; }
     .testimonial-card .author .role { font-size: 13px; color: var(--muted); }
 
-    /* newsletter */
+    /* newsletter : deep blue */
     .newsletter-wrap {
       background: linear-gradient(160deg, var(--primary) 0%, var(--primary-light) 100%);
       border-radius: var(--radius);
@@ -739,7 +743,7 @@
     footer {
       margin-top: 16px;
       padding: 48px 0 28px;
-      border-top: 1px solid rgba(0,0,0,0.02);
+      border-top: 1px solid rgba(10,30,60,0.04);
     }
     .footer-grid {
       display: grid;
@@ -781,6 +785,7 @@
       font-weight: 700;
       font-size: 14px;
       margin-bottom: 14px;
+      color: var(--primary);
     }
     .footer-grid .col ul {
       list-style: none;
@@ -797,7 +802,7 @@
     .footer-bottom {
       text-align: center;
       padding-top: 20px;
-      border-top: 1px solid rgba(0,0,0,0.02);
+      border-top: 1px solid rgba(10,30,60,0.04);
       color: var(--muted-light);
       font-size: 13px;
     }
@@ -936,11 +941,4 @@
         <div class="cat-card"><div class="icon-wrap"><i class="fas fa-shoe-prints"></i></div><h4>Footwear</h4><span class="count">32</span></div>
         <div class="cat-card"><div class="icon-wrap"><i class="fas fa-watch"></i></div><h4>Accessories</h4><span class="count">27</span></div>
         <div class="cat-card"><div class="icon-wrap"><i class="fas fa-laptop"></i></div><h4>Tech</h4><span class="count">19</span></div>
-        <div class="cat-card"><div class="icon-wrap"><i class="fas fa-couch"></i></div><h4>Living</h4><span class="count">23</span></div>
-        <div class="cat-card"><div class="icon-wrap"><i class="fas fa-palette"></i></div><h4>Art</h4><span class="count">14</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PRODUCTS ===== -->
-  <section
+        <div class="cat-card"><div class="icon-wrap"><i class="fas fa-couch"></i></div><h4>Living</h4><span class="count">23
