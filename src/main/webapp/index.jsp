@@ -874,7 +874,7 @@
     <div class="container header-inner">
       <div class="brand">
         <i class="fas fa-store-alt"></i>
-        <span>Nexus<span class="accent">Shop</span></span>
+        <span>Nexus<span class="accent">Browse & Shop</span></span>
       </div>
 
       <nav class="main-nav">
