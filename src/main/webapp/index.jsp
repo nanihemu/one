@@ -3,13 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nexus · blue horizon</title>
+  <title>Nexus · pink edit</title>
 
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
 
   <style>
+    /* ============================================================
+       PINK LAYOUT – complete UI transformation
+       ============================================================ */
     * {
       margin: 0;
       padding: 0;
@@ -17,22 +20,23 @@
     }
 
     :root {
-      --bg: #f0f4fa;
+      /* Pink palette */
+      --bg: #faf0f5;          /* soft pink background */
       --card: #ffffff;
-      --primary: #0b1a33;
-      --primary-light: #1a2d4a;
-      --accent: #2a6f97;
-      --accent-light: #c9ddec;
-      --accent-dark: #1d4f6e;
-      --muted: #4a5d72;
-      --muted-light: #8a9bae;
-      --surface: #e5ecf3;
-      --success: #2a9d8f;
-      --warning: #e9c46a;
+      --primary: #3d1c32;     /* deep plum/pink */
+      --primary-light: #5e2a4a;
+      --accent: #d63384;      /* main pink */
+      --accent-light: #f8d7e6;
+      --accent-dark: #b02b6f;
+      --muted: #7a4d66;
+      --muted-light: #b0889e;
+      --surface: #f5e4ed;
+      --success: #b34180;
+      --warning: #f0a0c0;
       --radius: 24px;
       --radius-sm: 12px;
-      --shadow: 0 8px 30px rgba(10, 30, 60, 0.06);
-      --shadow-hover: 0 20px 50px rgba(10, 30, 60, 0.10);
+      --shadow: 0 8px 30px rgba(180, 60, 120, 0.08);
+      --shadow-hover: 0 20px 50px rgba(180, 60, 120, 0.14);
       --transition: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
       --container: 1280px;
     }
@@ -56,15 +60,15 @@
       padding: 0 32px;
     }
 
-    /* ---- header : blue-tinted glass ---- */
+    /* ---- header : pink glass ---- */
     header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(240, 244, 250, 0.78);
+      background: rgba(250, 240, 245, 0.78);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(10, 30, 60, 0.04);
+      border-bottom: 1px solid rgba(214, 51, 132, 0.08);
     }
     .header-inner {
       display: flex;
@@ -149,7 +153,7 @@
       border-radius: 50%;
       display: grid;
       place-items: center;
-      border: 2px solid #f0f4fa;
+      border: 2px solid #faf0f5;
     }
 
     .search-wrap {
@@ -165,7 +169,7 @@
     .search-wrap:focus-within {
       border-color: var(--accent);
       background: #fff;
-      box-shadow: 0 0 0 6px rgba(42, 111, 151, 0.08);
+      box-shadow: 0 0 0 6px rgba(214, 51, 132, 0.10);
     }
     .search-wrap input {
       border: 0;
@@ -196,7 +200,7 @@
     #mobileMenu {
       display: none;
       background: #fff;
-      border-top: 1px solid rgba(10,30,60,0.04);
+      border-top: 1px solid rgba(214, 51, 132, 0.08);
       padding: 12px 0 20px;
     }
     #mobileMenu ul {
@@ -217,7 +221,7 @@
     #mobileMenu ul li a:hover { background: var(--accent-light); }
     #mobileMenu ul li a i { width: 24px; color: var(--muted); }
 
-    /* ---- buttons : blue accent ---- */
+    /* ---- buttons : pink accent ---- */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -239,7 +243,7 @@
       background: var(--accent-dark);
       border-color: var(--accent-dark);
       transform: translateY(-3px);
-      box-shadow: 0 16px 32px rgba(42, 111, 151, 0.25);
+      box-shadow: 0 16px 32px rgba(214, 51, 132, 0.25);
     }
     .btn-secondary {
       background: var(--primary);
@@ -249,12 +253,12 @@
     .btn-secondary:hover {
       background: var(--primary-light);
       transform: translateY(-3px);
-      box-shadow: 0 16px 32px rgba(11, 26, 51, 0.15);
+      box-shadow: 0 16px 32px rgba(61, 28, 50, 0.15);
     }
     .btn-outline {
       background: transparent;
       color: var(--primary);
-      border-color: rgba(11,26,51,0.12);
+      border-color: rgba(61, 28, 50, 0.12);
     }
     .btn-outline:hover {
       background: var(--primary);
@@ -271,7 +275,7 @@
     }
     .btn-sm { padding: 10px 24px; font-size: 13px; }
 
-    /* ---- hero : deep blue gradient ---- */
+    /* ---- hero : pink gradient ---- */
     .hero {
       position: relative;
       display: flex;
@@ -281,21 +285,21 @@
       border-radius: var(--radius);
       overflow: hidden;
       margin: 20px 32px 0;
-      background: linear-gradient(160deg, #0b1a33 0%, #1a3a5c 100%);
+      background: linear-gradient(160deg, #2d1424 0%, #4a1e38 100%);
     }
     .hero::before {
       content: '';
       position: absolute;
       inset: 0;
       background: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-      opacity: 0.20;
+      opacity: 0.15;
       z-index: 0;
     }
     .hero .container { position: relative; z-index: 1; }
     .hero .badge {
       display: inline-block;
-      background: rgba(42,111,151,0.20);
-      color: #b6d6ea;
+      background: rgba(214, 51, 132, 0.25);
+      color: #f8d7e6;
       padding: 6px 22px;
       border-radius: 60px;
       font-weight: 600;
@@ -360,7 +364,7 @@
       border-bottom-color: var(--accent);
     }
 
-    /* categories : blue-tinted tiles */
+    /* categories : pink tiles */
     .categories-grid {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -399,7 +403,7 @@
     .cat-card h4 { font-size: 15px; font-weight: 600; }
     .cat-card .count { font-size: 13px; color: var(--muted); margin-top: 4px; }
 
-    /* products : clean with blue accents */
+    /* products : pink accents */
     .products-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -540,7 +544,7 @@
     }
     .product-card .footer .add-btn.added { background: var(--success); }
 
-    /* deal : blue-infused */
+    /* deal : pink infusion */
     .deal-wrap {
       display: flex;
       gap: 0;
@@ -685,7 +689,7 @@
     .testimonial-card .author .name { font-weight: 600; font-size: 14px; }
     .testimonial-card .author .role { font-size: 13px; color: var(--muted); }
 
-    /* newsletter : deep blue */
+    /* newsletter : deep pink */
     .newsletter-wrap {
       background: linear-gradient(160deg, var(--primary) 0%, var(--primary-light) 100%);
       border-radius: var(--radius);
@@ -743,7 +747,7 @@
     footer {
       margin-top: 16px;
       padding: 48px 0 28px;
-      border-top: 1px solid rgba(10,30,60,0.04);
+      border-top: 1px solid rgba(214, 51, 132, 0.08);
     }
     .footer-grid {
       display: grid;
@@ -802,7 +806,7 @@
     .footer-bottom {
       text-align: center;
       padding-top: 20px;
-      border-top: 1px solid rgba(10,30,60,0.04);
+      border-top: 1px solid rgba(214, 51, 132, 0.08);
       color: var(--muted-light);
       font-size: 13px;
     }
@@ -874,15 +878,15 @@
     <div class="container header-inner">
       <div class="brand">
         <i class="fas fa-store-alt"></i>
-        <span>Nexus<span class="accent">Browse & Shop</span></span>
+        <span>Nexus<span class="accent">· pink</span></span>
       </div>
 
       <nav class="main-nav">
         <ul>
-          <li><a href="#" class="active"><i class="fas fa-compass"></i> Home Page</a></li>
-          <li><a href="#"><i class="fas fa-layer-group"></i> Shop Page</a></li>
-          <li><a href="#"><i class="fas fa-tag"></i> Offers Page</a></li>
-          <li><a href="#"><i class="fas fa-leaf"></i> Journal Page</a></li>
+          <li><a href="#" class="active"><i class="fas fa-compass"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-layer-group"></i> Shop</a></li>
+          <li><a href="#"><i class="fas fa-tag"></i> Offers</a></li>
+          <li><a href="#"><i class="fas fa-leaf"></i> Journal</a></li>
         </ul>
       </nav>
 
@@ -903,11 +907,11 @@
     <div id="mobileMenu">
       <div class="container">
         <ul>
-          <li><a href="#"><i class="fas fa-compass"></i> Home Page</a></li>
-          <li><a href="#"><i class="fas fa-layer-group"></i> Shop Page</a></li>
-          <li><a href="#"><i class="fas fa-tag"></i> Offers Page </a></li>
-          <li><a href="#"><i class="fas fa-leaf"></i> Journal Page</a></li>
-          <li><a href="#"><i class="far fa-user"></i> Account Page</a></li>
+          <li><a href="#"><i class="fas fa-compass"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-layer-group"></i> Shop</a></li>
+          <li><a href="#"><i class="fas fa-tag"></i> Offers</a></li>
+          <li><a href="#"><i class="fas fa-leaf"></i> Journal</a></li>
+          <li><a href="#"><i class="far fa-user"></i> Account</a></li>
         </ul>
       </div>
     </div>
@@ -916,7 +920,7 @@
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="container">
-      <span class="badge"><i class="fas fa-star"></i> new arrival</span>
+      <span class="badge"><i class="fas fa-star"></i> new in pink</span>
       <h1>Designed for life</h1>
       <p>Essential pieces, crafted with care — for the moments that matter.</p>
       <div class="actions">
@@ -940,5 +944,4 @@
         <div class="cat-card"><div class="icon-wrap"><i class="fas fa-tshirt"></i></div><h4>Apparel</h4><span class="count">48</span></div>
         <div class="cat-card"><div class="icon-wrap"><i class="fas fa-shoe-prints"></i></div><h4>Footwear</h4><span class="count">32</span></div>
         <div class="cat-card"><div class="icon-wrap"><i class="fas fa-watch"></i></div><h4>Accessories</h4><span class="count">27</span></div>
-        <div class="cat-card"><div class="icon-wrap"><i class="fas fa-laptop"></i></div><h4>Tech</h4><span class="count">19</span></div>
-        <div class="cat-card"><div class="icon-wrap"><i class="fas fa-couch"></i></div><h4>Living</h4><span class="count">23
+        <div class="cat-card"><div class="icon-wrap"><i class="fas fa-laptop"></i></div><h4>Tech</
