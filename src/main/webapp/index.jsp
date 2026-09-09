@@ -903,11 +903,11 @@
     <div id="mobileMenu">
       <div class="container">
         <ul>
-          <li><a href="#"><i class="fas fa-compass"></i> Home</a></li>
-          <li><a href="#"><i class="fas fa-layer-group"></i> Shop</a></li>
-          <li><a href="#"><i class="fas fa-tag"></i> Offers</a></li>
-          <li><a href="#"><i class="fas fa-leaf"></i> Journal</a></li>
-          <li><a href="#"><i class="far fa-user"></i> Account</a></li>
+          <li><a href="#"><i class="fas fa-compass"></i> Home Page</a></li>
+          <li><a href="#"><i class="fas fa-layer-group"></i> Shop Page</a></li>
+          <li><a href="#"><i class="fas fa-tag"></i> Offers Page </a></li>
+          <li><a href="#"><i class="fas fa-leaf"></i> Journal Page</a></li>
+          <li><a href="#"><i class="far fa-user"></i> Account Page</a></li>
         </ul>
       </div>
     </div>
