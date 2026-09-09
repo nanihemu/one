@@ -879,10 +879,10 @@
 
       <nav class="main-nav">
         <ul>
-          <li><a href="#" class="active"><i class="fas fa-compass"></i> Home</a></li>
-          <li><a href="#"><i class="fas fa-layer-group"></i> Shop</a></li>
-          <li><a href="#"><i class="fas fa-tag"></i> Offers</a></li>
-          <li><a href="#"><i class="fas fa-leaf"></i> Journal</a></li>
+          <li><a href="#" class="active"><i class="fas fa-compass"></i> Home Page</a></li>
+          <li><a href="#"><i class="fas fa-layer-group"></i> Shop Page</a></li>
+          <li><a href="#"><i class="fas fa-tag"></i> Offers Page</a></li>
+          <li><a href="#"><i class="fas fa-leaf"></i> Journal Page</a></li>
         </ul>
       </nav>
 
