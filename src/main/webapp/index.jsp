@@ -922,7 +922,7 @@
     <div class="container">
       <span class="badge"><i class="fas fa-star"></i> new in pink</span>
       <h1>Designed for life</h1>
-      <p>Essential pieces, crafted with care — for the moments that matter.</p>
+      <p>Essential pieces, crafted with care — for the moments that you live and matter.</p>
       <div class="actions">
         <a href="#" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Discover</a>
         <a href="#" class="btn btn-ghost"><i class="fas fa-play-circle"></i> Story</a>
